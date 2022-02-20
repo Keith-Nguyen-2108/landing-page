@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,44 +14,129 @@
 
   <div class="desktop-screen">
     <div class="group__container">
+      <!-- LOGO AND NAVBAR -->
       <div class="logo__container">
         <img src="./assets/desktop/logo.svg" />
+        <i class="fas fa-bars" onclick="toggleIconNav(this)"></i>
       </div>
-      <div class="nav">
-        <div class="nav__items" id="nav-items">
+      <div class="nav" id="nav">
+        <div class="nav__items">
           <div class="about__item">
-            <span class="nav__item__dark">About</span>
+            <span>About</span>
           </div>
           <div class="service__item">
-            <span class="">Service</span>
+            <span>Service</span>
           </div>
           <div class="project__item">
-            <span class="">Projects</span>
+            <span>Projects</span>
           </div>
         </div>
         <div class="schedule__item">
-          <span>Schedule a call</span>
+          <span class="fw__800">Schedule a call</span>
         </div>
       </div>
+      <!-- SECTION1 -->
       <div class="section1">
-        <img src="./assets/desktop/image-hero.jpg" class="section1__image" />
+        <div class="section1__image"></div>
         <div class="section1__content">
-          <h1>
+          <h1 class="section1__title fw__800">
             Branding &amp;<br />website design agency
           </h1>
           <p>
             We specialize in visual storytelling by creating cohesive brand and website design solutions for small
             businesses, giving lasting impressions to audiences in a digital world.
           </p>
-          <div class="btn btn__Learnmore">
-            <span>Learn more</span>
+          <div class="btn__Learnmore">
+            <span class="fw__800">Learn more</span>
           </div>
         </div>
+      </div>
+      <!-- SECTION2 -->
+      <div class="section2">
+        <div class="section2__image"></div>
+        <div class="section2__right__side">
+          <div class="section2__container">
+            <img src="./assets/desktop/bg-pattern-wave-red.svg" class="section2__red__wave" />
+            <div class="section2__content">
+              <h1 class="section2__title fw__800"><span class="section_first_word">Design</span> is strategic.</h1>
+              <p>“A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm
+                believers that success lies in creative collaboration with our clients.”
+              </p>
+              <div class="btn__ScheduleACall">
+                <span class="fw__800">Schedule a Call</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION3 -->
+      <div class="section3">
+        <div class="section3__right__side">
+          <h1 class="section3_title fw__800">Our approach for creating a winning brand</h1>
+          <div class="section3__group section3__group__1">
+            <h1 class="section3__group__1__title fw__800">01</h1>
+            <div class="section3__group__1__content">
+              <h5 class="fw__800">Brand Strategy</h5>
+              <p>Brand strategy is critical for long-term success. Outshining competitors and capturing the target
+                audience are key.</p>
+            </div>
+          </div>
+          <div class="section3__group section3__group__2">
+            <h1 class="section3__group__2__title">02</h1>
+            <div class="section3__group__2__content">
+              <h5 class="fw__800">Brand Design</h5>
+              <p>Keeping the brand design unique and meaningful helps in communicating the brand’s timeless value
+                effectively.</p>
+            </div>
+          </div>
+          <div class="section3__group section3__group__3">
+            <h1 class="section3__group__3__title">03</h1>
+            <div class="section3__group__3__content">
+              <h5 class="fw__800">Web Design</h5>
+              <p>A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased
+                revenues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION4 -->
+      <div class="section4">
+        <div class="section4__left__side">
+          <img src="./assets/desktop/bg-pattern-wavy-white.svg" class="section4__white__wave" />
+          <div class="section4__content">
+            <h1 class="section4__title fw__800">Brand naming & guidelines</h1>
+            <div class="section4__slide_control">
+              <div class="arrow__icon" onclick="prevSlide()">
+                <i class="fas fa-angle-left left_arrow"></i>
+              </div>
+              <div class="arrow__icon" onclick="nextSlide()">
+                <i class="fas fa-angle-right right__arrow"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section4__right__side">
+          <div class="section4__group__images">
+            <div class="section4__slide_image">
+              <img src="./assets/desktop/image-slide-1.jpg" />
+            </div>
+            <div class="section4__slide_image">
+              <img src="./assets/desktop/image-slide-2.jpg" />
+            </div>
+            <div class="section4__slide_image">
+              <img src="./assets/desktop/image-slide-3.jpg" />
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
 
 </body>
+<script src="https://kit.fontawesome.com/bb41e04bbd.js" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script src="script.js"></script>
 
 </html>
