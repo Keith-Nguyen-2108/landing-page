@@ -18,7 +18,8 @@ body {
 @media screen and (max-width: 1024px) {
   .section2__title,
   .section3_title,
-  .section4__title {
+  .section4__title,
+  .section5__title {
     font-size: 32px !important;
     line-height: 40px !important;
   }
@@ -41,10 +42,18 @@ body {
     font-size: 15px !important;
     line-height: 25px !important;
   }
+
+  .section5__red__wave {
+    display: none;
+  }
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .screen {
+    height: 2842px !important;
+  }
+
   /* NAVIGATION */
   .nav {
     width: 60vw !important;
@@ -140,7 +149,7 @@ body {
     margin-top: 32px !important;
   }
 
-  .btn__ScheduleACall {
+  .section2__btn__ScheduleACall {
     margin-top: 32px !important;
   }
 
@@ -209,14 +218,43 @@ body {
     top: 2119px !important;
   }
 
-  .section4__slide_image img {
+  .section4__slide_image div {
     width: 57vw !important;
     height: 472px !important;
     object-fit: cover;
   }
+
+  .section4__slide__1 {
+    background-image: url("./assets/tablet/image-slide-1.jpg") !important;
+  }
+
+  .section4__slide__2 {
+    background-image: url("./assets/tablet/image-slide-1.jpg") !important;
+  }
+
+  .section4__slide__3 {
+    background-image: url("./assets/tablet/image-slide-1.jpg") !important;
+  }
+
+  /* SECTION5 */
+
+  .section5__title {
+    width: 398px !important;
+    left: 39px !important;
+    top: 2661px !important;
+  }
+
+  .section5__btn__ScheduleACall {
+    right: 40px !important;
+    top: 2669px !important;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
+  .screen {
+    height: 3380px !important;
+  }
+
   /* LOGO */
   .logo__container {
     width: 327px !important;
@@ -262,7 +300,6 @@ body {
 
   .nav__items div {
     position: absolute;
-    font-size: 18px;
   }
 
   .about__item {
@@ -380,13 +417,13 @@ body {
     line-height: 25px !important;
   }
 
-  .btn__ScheduleACall {
+  .section2__btn__ScheduleACall {
     margin-top: 40px !important;
     height: 27px !important;
     width: 103px !important;
   }
 
-  .btn__ScheduleACall span {
+  .section2__btn__ScheduleACall span {
     font-size: 15px !important;
     line-height: 18px !important;
   }
@@ -457,10 +494,35 @@ body {
     top: 2313px !important;
   }
 
-  .section4__slide_image img {
+  .section4__slide_image div {
     width: 100vw !important;
     height: 404px !important;
     object-fit: cover;
+  }
+
+  .section4__slide__1 {
+    background-image: url("./assets/mobile/image-slide-1.jpg") !important;
+  }
+
+  .section4__slide__2 {
+    background-image: url("./assets/mobile/image-slide-2.jpg") !important;
+  }
+
+  .section4__slide__3 {
+    background-image: url("./assets/mobile/image-slide-3.jpg") !important;
+  }
+
+  /* SECTION5 */
+  .section5__title {
+    width: 327px !important;
+    left: 24px !important;
+    top: 3089px !important;
+  }
+
+  .section5__btn__ScheduleACall {
+    right: initial !important;
+    left: 24px;
+    top: 3216px !important;
   }
 }
 
@@ -475,12 +537,29 @@ h5 {
   font-weight: 800;
 }
 
-.desktop-screen {
+.fs__56 {
+  font-size: 56px;
+}
+
+.fs__18 {
+  font-size: 18px;
+}
+
+.lh__64 {
+  line-height: 64px;
+}
+
+.lh__32 {
+  line-height: 32px;
+}
+
+.screen {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   width: 100vw;
   overflow: hidden;
+  height: 3958px;
 }
 
 /* LOGO */
@@ -533,7 +612,6 @@ h5 {
 .about__item,
 .service__item,
 .project__item {
-  line-height: 32px;
   height: 32px;
 }
 
@@ -596,8 +674,7 @@ h5 {
   height: 96px;
   margin-top: 39px;
   margin-bottom: 0;
-  font-size: 18px;
-  line-height: 32px;
+
   display: inline-block;
 }
 
@@ -618,7 +695,6 @@ h5 {
   color: var(--white);
   font-style: normal;
 
-  font-size: 18px;
   line-height: 22px;
 }
 
@@ -669,11 +745,6 @@ h5 {
   color: var(--white);
 }
 
-.section2__title {
-  font-size: 56px;
-  line-height: 64px;
-}
-
 .section_first_word {
   color: var(--red);
 }
@@ -682,11 +753,9 @@ h5 {
   /* height: 128px; */
   width: 100%;
   margin-top: 43px;
-  font-size: 18px;
-  line-height: 32px;
 }
 
-.btn__ScheduleACall {
+.section2__btn__ScheduleACall {
   position: relative;
   width: 124px;
   height: 32px;
@@ -696,18 +765,18 @@ h5 {
   cursor: pointer;
 }
 
-.btn__ScheduleACall:hover {
+.section2__btn__ScheduleACall:hover {
   border-bottom: 2px solid #ff9393;
   color: #ff9393;
 }
 
-.btn__ScheduleACall span {
+.section2__btn__ScheduleACall span {
   position: absolute;
   height: 22px;
   left: 0%;
   right: 0%;
   top: calc(50% - 22px / 2 - 5px);
-  font-size: 18px;
+
   line-height: 22px;
 }
 
@@ -729,9 +798,6 @@ h5 {
   height: 192px;
   left: -379px;
   top: 400px;
-
-  font-size: 56px;
-  line-height: 64px;
   color: var(--bg-black);
   z-index: 2;
 }
@@ -774,15 +840,13 @@ h5 {
 .section3__group__2__content h5,
 .section3__group__3__content h5 {
   font-size: 20px;
-  line-height: 32px;
+
   text-transform: capitalize;
 }
 
 .section3__group__1__content p,
 .section3__group__2__content p,
 .section3__group__3__content p {
-  font-size: 18px;
-  line-height: 32px;
   margin-top: 24px;
 }
 
@@ -826,8 +890,6 @@ h5 {
 
 .section4__title {
   width: 100%;
-  font-size: 56px;
-  line-height: 64px;
   color: var(--white);
 }
 
@@ -880,8 +942,65 @@ h5 {
   cursor: pointer;
 }
 
-.section4__slide_image img {
+.section4__slide_image div {
   width: 62.15vw;
   height: 728px;
   object-fit: cover;
+}
+
+.section4__slide__1 {
+  background-image: url("./assets/desktop/image-slide-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section4__slide__2 {
+  background-image: url("./assets/desktop/image-slide-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section4__slide__3 {
+  background-image: url("./assets/desktop/image-slide-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* SECTION5 */
+
+.section5__red__wave {
+  position: absolute;
+  width: 134px;
+  height: 60px;
+  left: -67px;
+  top: 3744px;
+  object-fit: cover;
+}
+
+.section5__title {
+  position: absolute;
+  width: 635px;
+  height: 133px;
+  left: 11.5vw;
+  top: 3710px;
+}
+
+.section5__btn__ScheduleACall {
+  position: absolute;
+  width: 199px;
+  height: 64px;
+  right: 165px;
+  top: 3742px;
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.section5__btn__ScheduleACall span {
+  position: absolute;
+  height: 20px;
+  left: 45px;
+  top: 23px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
 }
